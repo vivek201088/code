@@ -1,4 +1,4 @@
-function fetch() {
+ function fetch() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       const data = Math.random();
@@ -10,6 +10,8 @@ function fetch() {
     }, 2000);
   });
 }
+
+console.log(promise());
 
 fetch()
   .then((result) => {
